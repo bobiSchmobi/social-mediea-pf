@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Set the URLs
+urls=("http://www.google.com" "http://www.youtube.com" "http://www.linkedin.com")
+
+mkdir downloads
+
+# Loop through each URL and fetch content with curl
+for url in "${urls[@]}"; do
+    # Extract the base name of the URL to use as the file name
+    filename=$(basename $url)
+
+    # Use curl to get the content and save it in a file
+    curl -L $url -o "./downloads/$filename.html"
+
+    # Print a message indicating success
+    echo "Content of $url saved to $filename.html"
+done

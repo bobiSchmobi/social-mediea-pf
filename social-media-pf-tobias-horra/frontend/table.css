@@ -1,0 +1,54 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+#topics{
+  padding-right: 10px;
+}
+
+.edit-btn,
+.remove-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+
+}
+
+.remove-btn {
+  background-color: #f44336;
+  width: 97%;
+  float: right;
+}
+
+.edit-btn {
+  width: 90%;
+  float: right;
+}
+
+
+/* edit / update section */
+.add-update-section {
+  padding: 0px 0px 20px;
+}
+
+.add-update-form {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.add-update-form label {
+  display: block;
+}
+
+.add-update-form input {
+  padding: 5px;
+}
+
+.add-update-form button {
+  padding: 7px;
+}

@@ -1,0 +1,15 @@
+curl -X GET http://localhost:3000/students
+
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"id": 300, "name": "John Doe", "age": 25, "topics": ["Math", "Science", "History"]}' \
+  http://localhost:3000/students
+
+curl -X PUT \
+  -H "Content-Type: application/json" \
+  -d '{"id": 300, "name": "Vanderlei", "age": 31, "topics": ["Math", "Science"]}' \
+  http://localhost:3000/students/300
+
+curl -X DELETE http://localhost:3000/students/300
+
+curl -X GET http://localhost:3000/students/under-30
